@@ -24,6 +24,11 @@ describe FizzBuzz, "Count" do
     @fizzbuzz.next.should == "fizz"
   end
 
+  it 'should buzz if it divides evenly by 5' do
+    count(4)
+    @fizzbuzz.next.should == 'buzz'
+  end
+  
   def count(i)
     i.times do
       @fizzbuzz.next

@@ -13,6 +13,9 @@ class FizzBuzz
       return 'fizz'
     end
 
+    if @count % 5 == 0
+      return 'buzz'
+    end
     @count
   end
 end
