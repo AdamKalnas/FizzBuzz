@@ -5,6 +5,11 @@ class FizzBuzz
   
   def next
     @count += 1
+    
+    if @count % 3 == 0 && @count % 5 == 0
+      return 'fizzbuzz'
+    end
+
     if @count % 3 == 0
       return 'fizz'
     end

@@ -30,7 +30,18 @@ describe FizzBuzz, 'Count' do
     count(4)
     @fizzbuzz.next.should == 'buzz'
   end
-  
+
+  it 'should buzz if the number has 5 in it' do
+    count 49
+    @fizzbuzz.next.should == 'buzz'
+  end
+
+  it 'should fizzbuzz if the number is a product of both 3 and 5' do
+    count 14
+    @fizzbuzz.next.should == 'fizzbuzz'
+  end
+
+
   def count(i)
     i.times do
       @fizzbuzz.next
