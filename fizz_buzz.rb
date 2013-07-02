@@ -6,7 +6,7 @@ class FizzBuzz
   def next
     @count += 1
     if @count % 3 == 0
-      return "fizz"
+      return 'fizz'
     end
 
     if @count.to_s.include? '3'
