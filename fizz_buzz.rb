@@ -8,6 +8,11 @@ class FizzBuzz
     if @count % 3 == 0
       return "fizz"
     end
+
+    if @count.to_s.include? '3'
+      return 'fizz'
+    end
+
     @count
   end
 end

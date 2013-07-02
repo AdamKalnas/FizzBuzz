@@ -17,6 +17,13 @@ describe FizzBuzz, "Count" do
     @fizzbuzz.next.should == "fizz"
   end
 
+  it 'should fizz if it has a 3 in the number' do
+    count(12)
+    @fizzbuzz.next.should == "fizz"
+    count(9)
+    @fizzbuzz.next.should == "fizz"
+  end
+
   def count(i)
     i.times do
       @fizzbuzz.next
