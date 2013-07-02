@@ -13,6 +13,8 @@ describe FizzBuzz, "Count" do
   it 'should fizz on numbers that are evenly divided by 3' do
     count(2)
     @fizzbuzz.next.should == "fizz"
+    count(2)
+    @fizzbuzz.next.should == "fizz"
   end
 
   def count(i)
