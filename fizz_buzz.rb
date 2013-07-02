@@ -1,10 +1,13 @@
 class FizzBuzz
   def initialize
-    @count =1
+    @count = 0
   end
   
   def next
     @count += 1
-    @count -1
+    if @count % 3 == 0
+      return "fizz"
+    end
+    @count
   end
 end

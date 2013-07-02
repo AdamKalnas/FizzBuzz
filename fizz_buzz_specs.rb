@@ -5,6 +5,6 @@ describe FizzBuzz, "Count" do
     fizzbuzz = FizzBuzz.new
     fizzbuzz.next.should == 1
     fizzbuzz.next.should == 2
+    fizzbuzz.next.should == "fizz"
   end
-
 end
