@@ -8,21 +8,11 @@ class FizzBuzz
     
     if @count % 3 == 0 && @count % 5 == 0
       return 'fizzbuzz'
-    end
-
-    if @count % 3 == 0
+    elsif @count % 3 == 0
       return 'fizz'
-    end
-
-    if @count.to_s.include? '3'
+    elsif @count.to_s.include? '3'
       return 'fizz'
-    end
-
-    if @count % 5 == 0
-      return 'buzz'
-    end
-
-    if @count.to_s.include? '5'
+    elsif @count % 5 == 0 or @count.to_s.include? '5'
       return 'buzz'
     end
 
