@@ -1,6 +1,6 @@
 require_relative 'fizz_buzz.rb'
 
-describe FizzBuzz, 'Count' do
+describe FizzBuzz do
   before(:each) do
     @fizzbuzz = FizzBuzz.new
   end
@@ -41,7 +41,10 @@ describe FizzBuzz, 'Count' do
     @fizzbuzz.next.should == 'fizzbuzz'
   end
 
-
+  it 'should buzz in the fifties' do
+    count 51
+    @fizzbuzz.next.should == 'buzz'
+  end
   def count(i)
     i.times do
       @fizzbuzz.next

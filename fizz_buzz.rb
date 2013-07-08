@@ -21,6 +21,11 @@ class FizzBuzz
     if @count % 5 == 0
       return 'buzz'
     end
+
+    if @count.to_s.include? '5'
+      return 'buzz'
+    end
+
     @count
   end
 end
